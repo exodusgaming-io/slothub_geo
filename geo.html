@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no">
+  <title>Geo Block</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="other">
+    <div class="other__items">
+      <div class="other__top">
+        <div class="other__logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div class="other__title">Thanks for stopping by!</div>
+        <div class="other__subtitle">At the moment, Coinz is only available to players located within the United States,
+          excluding the following states:
+        </div>
+        <div class="other__text">
+          California, Connecticut, Idaho, Louisiana, Michigan, New York, New Jersey, Washington, and West Virginia.
+        </div>
+      </div>
+      <div class="other__bottom">
+        <div class="other__text other__text-title">Think you’re in an eligible location and got this message by mistake?
+        </div>
+        <div class="other__text">
+          Don´t worry, feel free to reach out to our support team using one of the options below. We’re always happy to
+          help!
+        </div>
+        <div class="other__btns">
+          <a href="#" class="btn btn--grey" id="live-chat-btn">
+            Live Chat
+          </a>
+          <a href="mailto:support@slothub.us" class="btn btn--pink">
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const liveChatBtn = document.getElementById('live-chat-btn');
+
+      liveChatBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        if (window.parent && window.parent !== window) {
+          window.parent.postMessage('openLiveChat', '*');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

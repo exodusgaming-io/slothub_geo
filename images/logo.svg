@@ -1,0 +1,11 @@
+<svg width="180" height="33" viewBox="0 0 265 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="slothub.us">
+  <defs>
+    <linearGradient id="slothubGradientDark" x1="0" y1="0" x2="0" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FA0575"/>
+      <stop offset="1" stop-color="#DD24D0"/>
+    </linearGradient>
+  </defs>
+  <text x="0" y="35" font-family="Poppins, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="0.5">
+    <tspan fill="url(#slothubGradientDark)">slothub</tspan><tspan fill="#FFFFFF">.us</tspan>
+  </text>
+</svg>
